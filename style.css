@@ -173,5 +173,40 @@ header > div {
 
 /* #endregion advantages */
 
+/* #region product */
+
+.product_container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.product_graphics {
+  max-width: 100%;
+  min-height: 550px;
+  background-image: url("images/product-image.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 780px) {
+  .product_container {
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+  }
+
+  .product_graphics {
+    order: 2;
+  }
+
+  .product_text {
+    order: 1;
+  }
+}
+
+/* #endregion product */
+
 /* #region */
 /* #endregion */
