@@ -413,6 +413,14 @@ header > div {
   background-position: bottom;
 }
 
+#team ul {
+  padding-left: 0.75rem;
+}
+
+#team li {
+  list-style: "- " outside;
+}
+
 /* #endregion team */
 
 /* #region contact */
