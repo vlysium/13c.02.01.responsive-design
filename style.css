@@ -1,1 +1,177 @@
-/* Tip, copy paste from 13c.01.01 & 13c.01.02 to get fonts and colors up and running ... */
+/* #region global */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.max-width > * {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* #endregion global */
+
+/* #region colors */
+
+:root {
+  --primary-color: #1b212b;
+  --primary-color-light: #45536a;
+  --secondary-color: #f0f0f0;
+}
+
+/* #endregion colors */
+
+/* #region menu */
+
+.menu_container {
+  width: 100%;
+  padding: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 32px;
+  height: 48px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  gap: 32px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+/* #endregion menu */
+
+/* #region header */
+
+header {
+  background-image: url("images/mountains.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 75%;
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  place-items: center;
+  margin-top: -80px;
+}
+
+header > div {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  width: 100%;
+}
+
+.header_graphics {
+  margin: 0 auto 0 40px;
+  max-width: 800px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url("images/data-and-settings.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 900px) {
+  header {
+    height: 90vh;
+  }
+
+  header > div {
+    grid-template-rows: 4fr 3fr;
+    grid-template-columns: 1fr;
+    height: 90vh;
+  }
+
+  .header_graphics {
+    margin: 0;
+    max-width: 480px;
+  }
+}
+
+/* #endregion header */
+
+/* #region advantages */
+
+#advantages {
+  margin-top: -16px;
+  padding-bottom: 160px;
+  background: linear-gradient(180deg, var(--primary-color-light) 10%, var(--primary-color) 40%);
+}
+
+.advantages_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px 32px;
+}
+
+.advantages_card {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 4px 14px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.advantages_card_graphics {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.8);
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+.advantages_card:nth-child(1) .advantages_card_graphics {
+  background-image: url("images/card-image-1.webp");
+}
+
+.advantages_card:nth-child(2) .advantages_card_graphics {
+  background-image: url("images/card-image-2.webp");
+}
+
+.advantages_card:nth-child(3) .advantages_card_graphics {
+  background-image: url("images/card-image-3.webp");
+}
+
+.advantages_card:nth-child(4) .advantages_card_graphics {
+  background-image: url("images/card-image-4.webp");
+}
+
+.advantages_card:nth-child(5) .advantages_card_graphics {
+  background-image: url("images/card-image-5.webp");
+}
+
+.advantages_card_text {
+  padding: 24px;
+}
+
+/* #endregion advantages */
+
+/* #region */
+/* #endregion */
