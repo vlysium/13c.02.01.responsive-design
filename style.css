@@ -10,6 +10,7 @@
 
 html {
   overflow-x: hidden;
+  background-color: var(--secondary-color);
 }
 
 .max-width > * {
@@ -175,6 +176,11 @@ header > div {
 
 /* #region product */
 
+#product {
+  padding-top: 40px;
+  padding-bottom: 160px;
+}
+
 .product_container {
   display: grid;
   grid-template-rows: 1fr;
@@ -189,6 +195,13 @@ header > div {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.product_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 @media (max-width: 780px) {
@@ -207,6 +220,42 @@ header > div {
 }
 
 /* #endregion product */
+
+/* #region highlight */
+
+.highlight {
+  padding-block: 80px;
+  background-color: var(--primary-color);
+}
+
+.highlight_small_cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-block: 40px;
+}
+
+.highlight_small_cards > div {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 6px;
+  box-shadow: 4px 14px 20px 0px rgba(0, 0, 0, 0.15);
+  margin-inline: 40px;
+}
+
+@media (max-width: 600px) {
+  .highlight_small_cards {
+    flex-direction: column;
+  }
+
+  .highlight_small_cards > div {
+    width: 100%;
+    margin-inline: 0;
+    text-align: center;
+  }
+}
+
+/* #endregion highlight */
 
 /* #region */
 /* #endregion */
