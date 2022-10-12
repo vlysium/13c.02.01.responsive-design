@@ -198,6 +198,7 @@ header > div {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 40px;
 }
 
 .header_text button {
