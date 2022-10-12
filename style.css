@@ -131,7 +131,7 @@ header > div {
 
 .advantages_card {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
   background-color: var(--secondary-color);
   border-radius: 8px;
   overflow: hidden;
@@ -144,7 +144,7 @@ header > div {
   background-size: cover;
   filter: brightness(0.8);
   width: 100%;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 9 / 5;
 }
 
 .advantages_card:nth-child(1) .advantages_card_graphics {
