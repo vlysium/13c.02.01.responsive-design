@@ -432,6 +432,8 @@ input,
   border-radius: 18px;
   border: 1px solid var(--primary-color-light);
   font-size: 1rem;
+  font-family: var(--body-text);
+  color: var(--primary-color-dark);
 }
 
 .form_group:nth-child(3) {
@@ -440,6 +442,8 @@ input,
 
 #message {
   resize: none;
+  min-height: 20vh;
+  border-radius: 6px;
 }
 
 @media (max-width: 512px) {
